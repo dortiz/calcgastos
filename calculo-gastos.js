@@ -1,11 +1,11 @@
 const nombreInput = document.getElementById('nombreInput');
 const gastoInput = document.getElementById('gastoInput');
-const agregarAmigo = document.getElementById('agregarAmigo');
+const agregarAmigoBoton = document.getElementById('agregarAmigo');
 const resultadosDiv = document.getElementById('resultadosDiv');
 
 const amigos = [];
 
-function agregarAmigo() {
+function agregarAmigoLista() {
   const nombre = nombreInput.value;
   const gasto = parseFloat(gastoInput.value);
 
@@ -50,4 +50,4 @@ function mostrarResultados() {
   });
 }
 
-agregarAmigo.addEventListener('click', agregarAmigo);
+agregarAmigoBoton.addEventListener('click', agregarAmigoLista);
