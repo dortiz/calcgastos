@@ -34,8 +34,8 @@ function mostrarResultados() {
     <ul>
       ${amigos.map(amigo => `<li>${amigo.nombre}: $${amigo.gasto.toFixed(2)}</li>`).join('')}
     </ul>
-    <p>Total de gastos: $${totalGastos.toFixed(2)}</p>
-    <p>Promedio de gastos: $${promedioGastos.toFixed(2)}</p>
+    <p>Total: $${totalGastos.toFixed(2)}</p>
+    <p>X Pera: $${promedioGastos.toFixed(2)}</p>
   `;
 
   resultadosDiv.innerHTML = resultadosHTML;
